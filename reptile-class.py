@@ -3,7 +3,7 @@ from animal_class import *
 
 class Reptile(Animal):
 
-    def __init__(self, name, age, colour, scales,blood_temp):
+    def __init__(self, name, age, colour, blood_temp, scales,):
         super().__init__(name, age, colour)
         self.blood_temp = blood_temp
         self.scales = scales
@@ -23,13 +23,13 @@ class Reptile(Animal):
         return
 
 
-animal1 = Animal('Nacho', 20, 'Yellowish')
+animal1 = Animal('Nacho', 20, 'Yellowish', 'BloodType', 'Snake Skin')
 print(animal1)
 
 print('')
 
 # Reptile has all the attribute and method of Animal
-reptile1 = Reptile('Ringo', 200, 'Blueish')
+reptile1 = Reptile('Ringo', 200, 'Blueish','BloodType', 'Snake Skin')
 print(reptile1.name) # This is a attribute of a reptile not a method
 print(reptile1.eat())
 print(reptile1.potty())

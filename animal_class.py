@@ -1,18 +1,13 @@
 
-# define our Animal Class
 
-# Pseudo Code
-    # Looks / Characteristic of every animal
-    # name, age, colour, hear, brain
+                                    # ===== IN PSEUDO CODE =====
 
-    # Behaviours / Methods of every animal
-    # eat, sleep, reproduce, potty, make_sound
-
+# 1. Define our Animal Class
 class Animal():
 
-    # define behaviour and characteristics
 
-    # define the characteristics of EVERY animal
+    # 2. The CHARACTERISTICS  of every animal will include the following:
+    # name, age, colour, hear, brain
 
     def __init__(self, name, age, colour, blood, scales):
         self.name = name
@@ -21,10 +16,9 @@ class Animal():
         self.heart = True
         self.brain = True
 
+    # 3. The METHODS of every animal will include the following:
+    # eat, sleep, reproduce, potty, make_sound
 
-    # define behaviour and characteristics
-
-    # Defining the method .eat(), .sleep(), .reproduce(), .potty(), .make_sound()
     def eat(self):
         return('Nom. Nom Nom')
 
@@ -48,7 +42,7 @@ class Animal():
 
 #  Creating an instance of class animal
 
-ringo = Animal('Ringo', 200 ,'Blueish') # This creates instanes of class animal and assigns variable to ringo
+ringo = Animal('Ringo', 200 ,'Blueish', 'BloodType', 'Snake Skin') # This creates instanes of class animal and assigns variable to ringo
 # Checking and printing the instance
 print(ringo)
 print(type(ringo))
@@ -72,8 +66,9 @@ print(ringo.heart)
 print('')
 
 # second animal
-mini = Animal('Stacey', 25, 'Golden')
+mini = Animal('Stacey', 25, 'Golden', 'BloodType', 'Snake Skin')
 print(mini.name)
 print(mini.age)
 print(mini.colour)
-
+print(mini.blood_temp)
+print(mini.scales)
